@@ -4,25 +4,14 @@ const rl = readline.createInterface({
 	output: process.stdout,
 	terminal: false,
 });
-let maxLength = 0;
-let isFirstLine = true;
-
-const validateLength = () => {
-	if (isNaN(maxLength) || maxLength <= 0) {
-		process.exit(1);
-	}
-};
 
 const handleAbbreviation = word => {
-	if (word.length <= maxLength) console.log(word);
+	if (word.length <= 10) console.log(word);
 	else console.log(`${word[0]}${word.length - 2}${word[word.length - 1]}`);
 };
-
+const isValid = value => !isNaN(parseInt(value));
 rl.on("line", word => {
-	if (isFirstLine) {
-		maxLength = parseInt(word);
-		validateLength();
-		isFirstLine = false;
+	if (isValid(word)) {
 		return;
 	} else handleAbbreviation(word);
 });
