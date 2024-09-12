@@ -1,7 +1,3 @@
-Here’s a more engaging version of your README with emojis for added clarity and personality:
-
----
-
 # 🧩 solveBox
 
 Welcome to **solveBox** — a comprehensive collection of coding solutions aimed at conquering challenges from platforms like Codeforces, Codewars, and beyond. This repository serves as your problem-solving hub, with organized solutions to boost your algorithmic thinking and coding skills.
