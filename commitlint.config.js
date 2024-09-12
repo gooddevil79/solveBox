@@ -1,11 +1,7 @@
 module.exports = {
 	extends: ["@commitlint/config-conventional"],
 	rules: {
-		"type-enum": [
-			2,
-			"always",
-			["solve", "fix", "chore", "refactor", "general"],
-		],
+		"type-enum": [2, "always", ["solve", "fix", "chore", "refactor", "feat"]],
 		"scope-enum": [
 			2,
 			"always",
@@ -17,6 +13,7 @@ module.exports = {
 				"codeforces:E",
 				"codeforces:F",
 				"codewars",
+				"general",
 			],
 		],
 		"subject-case": [2, "never", ["start-case", "pascal-case", "upper-case"]],
