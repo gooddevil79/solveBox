@@ -5,13 +5,13 @@ const rl = readline.createInterface({
 	terminal: false,
 });
 
-rl.on("line", bearBrothers => {
-	let [limak, bob] = bearBrothers.split(" ").map(Number);
-	let year = 0;
-	while (limak <= bob) {
-		limak *= 3;
-		bob *= 2;
-		year++;
+const calculateYears = (linkWeight, bobWeight, year = 0) => {
+	if (linkWeight > bobWeight) {
+		return year;
 	}
-	console.log(year);
+	return calculateYears(linkWeight * 3, bobWeight * 2, year + 1);
+};
+rl.on("line", bearBrothers => {
+	let [link, bob] = bearBrothers.split(" ").map(Number);
+	console.log(calculateYears(link, bob));
 });
