@@ -50,18 +50,3 @@ Where:
 - 🔄 `refactor(general): optimize sorting algorithm`
 
 > **Note:** For platforms without levels, the `level` can be omitted.
-
-## 🤝 Contribution Guidelines
-
-Contributions are welcome! If you'd like to add solutions or improve existing ones:
-
-1. 🍴 **Fork** the repository.
-2. 🌿 Create a **new branch** with a descriptive name.
-3. 🧠 Add your solutions, ensuring they follow the folder and commit message conventions.
-4. 📝 Open a **pull request** with a clear explanation of your changes.
-
-## 🚀 Planned Enhancements
-
-- **📈 More Platforms**: Adding challenges from LeetCode, HackerRank, and more.
-- **🔢 Expanded Problem Sets**: Continuously adding more problems, including new levels for existing platforms.
-- **✅ Testing Framework**: Implementing automated tests to verify the correctness of solutions.
