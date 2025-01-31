@@ -14,6 +14,7 @@ module.exports = {
 				"codeforces:F",
 				"codewars",
 				"general",
+				"tsc"
 			],
 		],
 		"subject-case": [2, "never", ["start-case", "pascal-case", "upper-case"]],
